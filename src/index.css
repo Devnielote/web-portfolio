@@ -13,27 +13,33 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  --terminal-black: #000000;
+  --green-phosphor: #00FF00;
+  --dark-green: #008000;
+  --gray-screen: #1A1A1A;
+  --bright-lime: #39FF14;
+  --ambert-atl: #FFBF00;
+
+  --font-terminal: 'IBM Plex Mono', 'Share Tech Mono', monospace;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--green-phosphor);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color:var(--dark-green);
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background-color: var(--terminal-black);
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
 }
 
@@ -66,5 +72,13 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@layer layout {
+  header {
+    .header_logo {
+      letter-spacing: 1.5px;
+    }
   }
 }
