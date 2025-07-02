@@ -7,7 +7,7 @@ export default function ProjectCard(props: Project) {
 
   return(
     <div className='project_container flex-col align-middle  mb-2'>
-      <div className="image_container w-10/12 m-auto mb-7 sm:w-5/12 lg:w-4/5">
+      <div className="image_container w-10/12 m-auto mb-7 sm:w-5/12 lg:w-5/6">
         <Link to="/home">
           <img src={imageUrl} alt="" className='w-full'/>
         </Link>
