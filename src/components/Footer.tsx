@@ -4,20 +4,14 @@ import { Link } from "react-router-dom";
 export default function Footer () {
   return (
     <footer>
-      <div className="footer_navigation hidden md:block px-3 pt-10 mt-10">
-        <div className="reach_me w-full flex-col text-left"> 
+      <div className="footer_navigation hidden md:text-xl md:block md:px-3 md:pt-2 md:mt-2 md:pl-10 lg:flex lg:w-2/3 lg:justify-evenly lg:items-center">
+        <div className="reach_me flex flex-col text-left"> 
           <span>/CONTACT ME</span>
-          <div className="text-lg mt-2">
+          <div className="">
             <Link to="/">daniel.flores@dev.com</Link>
           </div>
         </div>
-        <div className="socials flex-col text-left mt-4">
-          <span>/STALK ME</span>
-          <div className="flex-col mt-2">
-            <Link className="flex w-auto" to="https://www.linkedin.com/in/danielflorescardona/">Linkedin</Link>
-            <Link className="flex" to="https://github.com/Devnielote">Github</Link>
-            <Link className="flex" to="/home">Resume</Link>
-          </div>
+        <div className="socials flex flex-col text-left mt-4 lg:ml-20">
           <div className="footer_links flex-col mt-4">
             <span>/NAVIGATE TO</span>
             <Link to="/home" className="flex mt-2">Home</Link>
@@ -25,13 +19,19 @@ export default function Footer () {
             <Link to="/home" className="flex">About</Link>
           </div>
         </div>
-        <div>
-          <Link to="/home" className="text-left">
-            <h1 className="text-6xl">Let's create together<img src="" alt=""/></h1>
-          </Link>
+        <div className="flex flex-col mt-4 text-left lg:ml-20">
+          <span>/STALK ME</span>
+          <Link className="flex w-auto mt-2" to="https://www.linkedin.com/in/danielflorescardona/">Linkedin</Link>
+          <Link className="flex" to="https://github.com/Devnielote">Github</Link>
+          <Link className="flex" to="/home">Resume</Link>
         </div>
       </div>
-      <div className="footer_mobile flex justify-between p-2 text-sm text-[var(--dark-green)] md:hidden">
+      <div className="hidden md:block md:mt-10 md:pl-10">
+        <Link to="/home" className="text-left">
+          <h1 className="text-7xl tracking-tighter lg:text-9xl">Let's create together<img src="" alt=""/></h1>
+        </Link>
+      </div>
+      <div className="footer_mobile flex justify-between p-2 text-sm text-[var(--dark-green)] md:p-5 md:mt-10">
         <Link to="https://www.linkedin.com/in/danielflorescardona/">LI ↱</Link>
         <p className="">DESIGNED WITH 💚 BY ME</p>
       </div>
