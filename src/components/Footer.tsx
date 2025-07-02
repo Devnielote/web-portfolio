@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer () {
   return (
     <footer>
-      <div className="footer_navigation px-3 pt-10 mt-10">
+      <div className="footer_navigation hidden md:block px-3 pt-10 mt-10">
         <div className="reach_me w-full flex-col text-left"> 
           <span>/CONTACT ME</span>
           <div className="text-lg mt-2">
@@ -30,7 +30,10 @@ export default function Footer () {
             <h1 className="text-6xl">Let's create together<img src="" alt=""/></h1>
           </Link>
         </div>
-        <p className="mt-5 py-5">DESIGNED WITH 💚 BY ME</p>
+      </div>
+      <div className="footer_mobile flex justify-between p-2 text-sm text-[var(--dark-green)] md:hidden">
+        <Link to="https://www.linkedin.com/in/danielflorescardona/">LI ↱</Link>
+        <p className="">DESIGNED WITH 💚 BY ME</p>
       </div>
     </footer>
   )
