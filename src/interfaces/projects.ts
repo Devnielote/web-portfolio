@@ -8,8 +8,46 @@ export interface Project {
 };
 
 
-export const projects: Project[] = [
+export const mainProjects: Project[] = [
   {
+    index:1,
+    title:"Where in the world",
+    description:`A web app that allows you to search for country flags using filters 
+                search by name`,
+    liveUrl:"https://devnielote.github.io/region/America",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/rest-countries-api/refs/heads/main/src/assets/images/countries_desktop2.png",
+    tags:["javascript", "css", "mobile-first","responsive design"]
+  },
+  {
+    index: 2,
+    title: "Quick watch",
+    description:`Movie browser web application showing the latest movies,
+                top movies and series of all times, it allows you to add movies 
+                series to your watchlist`,
+    liveUrl:"https://devnielote.github.io/quick-watch/#",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/quick-watch/main/src/images/quick-desktop.png",
+    tags:["javascript", "css", "mobile-first","responsive design"]
+  },
+  {
+    index: 3,
+    title:"ROCK PAPER SCISSORS",
+    description:"Web app of the classic game agaisnt the cpu, made with Typescript",
+    liveUrl:"https://devnielote.github.io/rock-paper-scissors/",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/rock-paper-scissors/main/src/assets/images/rps-desktop.png",
+    tags:["typescript","css","mobile-first", "responsive-design", "poo"]
+  },
+  {
+    index: 4,
+    title:"TODO",
+    description:"Web app for tracking tasks, it got filters and nigth mode",
+    liveUrl:"https://devnielote.github.io/todo-app/",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/todo-app/main/src/images/todo-desktop.png",
+    tags:["javascript", "css", "mobile-first", "responsive design"],
+  }
+]
+
+export const allProjects: Project[] = [
+   {
     index:1,
     title:"Where in the world",
     description:`A web app that allows you to search for country flags using filters 
@@ -91,5 +129,5 @@ export const projects: Project[] = [
     liveUrl:"https://devnielote.github.io/bento-grid/",
     imageUrl:"https://raw.githubusercontent.com/Devnielote/bento-grid/main/assets/images/bento-grid-desktop.png",
     tags:["semantic-html5", "css", "mobile-first", "responsive design", "grid", "flexbox"]
-  }
+  } 
 ]
