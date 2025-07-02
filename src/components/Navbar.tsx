@@ -7,6 +7,17 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+
+    const handleResize = () => {
+      if (window.innerWidth >= 640) {
+        setMenuOpen(false);
+        document.body.style.overflow = '';
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
     if(menuOpen) {
       document.body.classList.add('overflow-hidden');
     } else {
@@ -20,13 +31,21 @@ export default function Navbar() {
 
   return (
     <header className='flex justify-between items-center '>
-      <Link to="/home" className='header_logo'>
-        <h1 className='text-xs'>DANIEL FLORES</h1>
-      </Link>
-      <nav className='hidden sm:flex justify-around items-center w-1/2'>
-        <Link to="/projects">SELECTED PROJECTS</Link>
-        <Link to="/about">ABOUT ME</Link> 
-      </nav>
+      <div className='flex w-full md:justify-between text-sm'>
+        <div className='flex items-center'>
+          <Link to="/home" className='header_logo'>
+            <h1 className='text-xs sm:text-sm'>DANIEL FLORES</h1>
+          </Link>
+          <nav className='hidden md:flex justify-start items-center ml-10 lg:ml-36'>
+            <Link to="/projects">SELECTED PROJECTS</Link>
+            <Link className='ml-10' to="/about">ABOUT ME</Link> 
+          </nav>
+        </div>
+        <div className='hidden md:flex'>
+          <Link className='mr-10' to="/home">MY RESUME ↱ </Link>
+          <Link to="/home">WORK WITH ME ↱</Link>
+        </div>
+      </div>
 
       <div className='fixed left-1/2 translate-x-[-50%] bottom-5 z-50 md:hidden
             transition-all 
@@ -48,20 +67,29 @@ export default function Navbar() {
         </button>
 
         {menuOpen && (
-          <nav className='mobile_nav flex flex-col justify-around w-64 h-96 sm:w-[25rem] sm:h-[25rem] sm:[top:-450px]'>
-            <header className='flex justify-around w-1/2'>
+          <nav className='mobile_nav flex flex-col justify-between w-64 h-[400px] [top:-410px] sm:w-[25rem] sm:h-[25rem] sm:[top:-420px]'>
+            <header className='flex justify-around w-1/2 text-xs sm:justify-start'>
               <Link to="/home">LI ↱</Link>
-              <Link to="/home">GH ↱</Link>
+              <Link className='sm:ml-3' to="/home">GH ↱</Link>
             </header>
             <section className='flex flex-col items-center w-full'>
               <img src={dan} alt="Pixelated image of myself" className='w-2/6 rounded-full mb-5'/>
               <h1>Daniel Flores</h1>
               <span className='text-xs text-[var(--dark-green)]'>Frontend Developer</span>
             </section>
-            <section className='flex flex-col pl-5 text-left'>
-              <Link to="/projects" onClick={() => setMenuOpen(false)}>Select projects</Link>
-              <Link className='mt-2' to="/about" onClick={() => setMenuOpen(false)}>About me</Link>
+            <section className='flex flex-col px-5 py-4 text-left border-y border-[var(--dark-green)] sm:mt-2'>
+              <div className='flex justify-between items-center text-md'>
+                <Link to="/projects" onClick={() => setMenuOpen(false)}>Selected projects</Link>
+                <span className='text-[var(--green-phosphor)]'>▷</span>
+              </div>
+              <div className='flex justify-between items-center mt-4 pt-2 border-t border-[var(--dark-green)] text-md'>
+                <Link className='' to="/about" onClick={() => setMenuOpen(false)}>About me</Link>
+                <span className='text-[var(--green-phosphor)]'>▷</span>
+              </div>
             </section>
+            <div className='flex mb-5 mx-auto text-xs sm:mt- sm:mt-3'>
+              <Link to="/home">WORK WITH ME</Link>
+            </div>
           </nav>
         )}
       </div>
