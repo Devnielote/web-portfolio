@@ -5,6 +5,26 @@ import dan from '../assets/web-dan.png';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if(currentScrollY > lastScrollY){
+        setShowNavbar(false);
+      }else {
+        setShowNavbar(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  },[lastScrollY]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
@@ -30,20 +50,22 @@ export default function Navbar() {
   }, [menuOpen])
 
   return (
-    <header className='flex justify-between items-center '>
-      <div className='flex w-full md:justify-between text-sm'>
+    <header className='flex justify-between items-center'>
+      <div className={`fixed top-0 left-0 flex justify-between w-full mt-6 px-5 transition-transform duration-300 z-50 text-sm md:justify-between md:text-base
+        ${showNavbar ? "translate-y-0" : "-translate-y-28"}
+      `}>
         <div className='flex items-center'>
-          <Link to="/home" className='header_logo'>
-            <h1 className='text-xs sm:text-sm'>DANIEL FLORES</h1>
+          <Link to="/" className='header_logo'>
+            <h1 className=''>DANIEL FLORES</h1>
           </Link>
-          <nav className='hidden md:flex justify-start items-center ml-10 lg:ml-36'>
+          <nav className='hidden md:flex justify-start items-center ml-7 lg:ml-32'>
             <Link to="/projects">SELECTED PROJECTS</Link>
             <Link className='ml-10' to="/about">ABOUT ME</Link> 
           </nav>
         </div>
-        <div className='hidden md:flex'>
-          <Link className='mr-10' to="/home">MY RESUME ↱ </Link>
-          <Link to="/home">WORK WITH ME ↱</Link>
+        <div className='md:flex'>
+          <Link className='hidden md:block md:mr-10' to="/home">MY RESUME ↱ </Link>
+          <Link className='ml-auto md:ml-0' to="/home">WORK WITH ME ↱</Link>
         </div>
       </div>
 
