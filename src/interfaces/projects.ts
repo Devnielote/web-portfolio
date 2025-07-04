@@ -79,7 +79,7 @@ export const allProjects: Project[] = [
     title:"ROCK PAPER SCISSORS",
     description:"Web app of the classic game agaisnt the cpu, made with Typescript",
     liveUrl:"https://devnielote.github.io/rock-paper-scissors/",
-    imageUrl:"no-url",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/rock-paper-scissors/main/src/assets/images/rps-desktop.png",
     tags:["typescript","css","mobile-first", "responsive-design", "poo"]
   },
   {
@@ -87,7 +87,7 @@ export const allProjects: Project[] = [
     title:"Brand",
     description:"Pet food delivery for your pets",
     liveUrl:"https://devnielote.github.io/pet-food-web/",
-    imageUrl:"no-url",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/pet-food-web/main/assets/brand-desktop.png",
     tags:["css", "semantic-html"],
   },
   {
@@ -95,7 +95,7 @@ export const allProjects: Project[] = [
     title:"Morrowind Fan Page",
     description:"Blog for bethesda Morrowind game",
     liveUrl:"https://devnielote.github.io/the-morrowind-fan-page/index.html",
-    imageUrl:"no-url",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/the-morrowind-fan-page/main/assets/morrowind-desktop.png",
     tags:["semantic-html5", "css"]
   },
   {
@@ -103,7 +103,7 @@ export const allProjects: Project[] = [
     title:"Huddle landing page",
     description:"Landing page for a community management application",
     liveUrl:"https://devnielote.github.io/huddle-landing/",
-    imageUrl:"https://raw.githubusercontent.com/Devnielote/huddle-landing/main/assets/images/desktop_view.png",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/huddle-landing/main/assets/images/huddle-desktop.png",
     tags:["semantic-html5","css","mobile-first","responsive design"]
   },
   {
@@ -111,7 +111,7 @@ export const allProjects: Project[] = [
     title:"Sunny side landing page",
     description: "Landing page for marketing agency using a mobile-first aproach",
     liveUrl:"https://devnielote.github.io/sunnyside-landing/",
-    imageUrl:"no-url",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/sunnyside-landing/main/images/sunny-desktop.png",
     tags:["semantic-html5","css","responsive design", "grid", "flexbox"]
   },
   {
@@ -129,5 +129,13 @@ export const allProjects: Project[] = [
     liveUrl:"https://devnielote.github.io/bento-grid/",
     imageUrl:"https://raw.githubusercontent.com/Devnielote/bento-grid/main/assets/images/bento-grid-desktop.png",
     tags:["semantic-html5", "css", "mobile-first", "responsive design", "grid", "flexbox"]
-  } 
+  },
+  {
+    index: 11,
+    title: "Tola coffee tavern",
+    description:"A demo web for a coffee shop",
+    liveUrl:"https://devnielote.github.io/tola-coffee-tavern/",
+    imageUrl:"https://raw.githubusercontent.com/Devnielote/tola-coffee-tavern/main/assets/images/tola-desktop.png",
+    tags:["semantic-html","css","mobile-first","responsive design", "flexbox"]
+  }
 ]
