@@ -161,6 +161,15 @@
   .animate-fade-in-up {
     animation: fade-in-up 0.5s ease-out forwards;
   }
+
+  .list-square {
+    list-style-type: square;
+  }
+
+  .custom-marker::marker {
+    color: var(--green-phosphor);
+    font-size: 1.5rem;
+  }
 }
 
 @layer backgrounds {
