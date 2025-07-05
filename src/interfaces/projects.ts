@@ -14,7 +14,7 @@ export const mainProjects: Project[] = [
     title:"Where in the world",
     description:`A web app that allows you to search for country flags using filters 
                 search by name`,
-    liveUrl:"https://devnielote.github.io/region/America",
+    liveUrl:"https://devnielote.github.io/rest-countries-api/",
     imageUrl:"https://raw.githubusercontent.com/Devnielote/rest-countries-api/refs/heads/main/src/assets/images/countries_desktop2.png",
     tags:["javascript", "css", "mobile-first","responsive design"]
   },
@@ -52,7 +52,7 @@ export const allProjects: Project[] = [
     title:"Where in the world",
     description:`A web app that allows you to search for country flags using filters 
                 search by name`,
-    liveUrl:"https://devnielote.github.io/region/America",
+    liveUrl:"https://devnielote.github.io/rest-countries-api/",
     imageUrl:"https://raw.githubusercontent.com/Devnielote/rest-countries-api/refs/heads/main/src/assets/images/countries_desktop2.png",
     tags:["javascript", "css", "mobile-first","responsive design"]
   },
