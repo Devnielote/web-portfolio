@@ -4,12 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Projects from './pages/Projects'
 import About from './pages/About'
 import Footer from './components/Footer'
+import ScrollTop from './utils/ScrollTop'
 
 function App() {
 
   return (
     <BrowserRouter>
       <Navbar/>
+      <ScrollTop/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
