@@ -70,7 +70,7 @@ export default function Projects () {
         className='project_section grid grid-cols-1 sm:gap-5 lg:grid-cols-2 pt-2 md:px-5 md:pt-5'
       >
         <div className='border-b lg:col-span-2'>
-          <Link to="/">
+          <Link to={allProjects[0].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center
               md:h-96 lg:h-[calc(70vh)]'
@@ -90,7 +90,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b'>
-          <Link to="/">
+          <Link to={allProjects[1].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(60vh)]'
               style={{backgroundImage:`url(${quickBg})`}}
@@ -107,7 +107,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b'>
-          <Link to="/">
+          <Link to={allProjects[2].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(60vh)]'
               style={{backgroundImage:`url(${todoBg})`}}
@@ -124,7 +124,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b lg:col-span-2'>
-          <Link to="/">
+          <Link to={allProjects[3].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(70vh)]'
               style={{backgroundImage:`url(${rockBg})`}}
@@ -141,7 +141,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b'>
-          <Link to="/">
+          <Link to={allProjects[4].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(60vh)]'
               style={{backgroundImage:`url(${brandBg})`}}
@@ -158,7 +158,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b'>
-          <Link to="/">
+          <Link to={allProjects[5].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(60vh)]'
               style={{backgroundImage:`url(${morrowindBg})`}}
@@ -175,7 +175,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b lg:col-span-2'>
-          <Link to="/">
+          <Link to={allProjects[6].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(70vh)]'
               style={{backgroundImage:`url(${huddleBg})`}}
@@ -192,7 +192,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b'>
-          <Link to="/">
+          <Link to={allProjects[8].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(60vh)]'
               style={{backgroundImage:`url(${snapBg})`}}
@@ -209,7 +209,7 @@ export default function Projects () {
           </Link>
         </div>
         <div className='border-b'>
-          <Link to="/">
+          <Link to={allProjects[10].liveUrl}>
             <div
               className='relative flex justify-center items-center w-full h-72 overflow-hidden bg-cover bg-no-repeat bg-center md:h-96 lg:h-[calc(60vh)]'
               style={{backgroundImage:`url(${tolaBg})`}}
