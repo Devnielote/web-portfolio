@@ -1,9 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import type { Project } from '../interfaces/projects';
 
 export default function ProjectCard(props: Project) {
-  const {index,title,description,liveUrl,imageUrl,tags} = props;
+  const {liveUrl,imageUrl,tags} = props;
 
   return(
     <div className='project_container flex-col align-middle  mb-2'>
