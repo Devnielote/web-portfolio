@@ -64,8 +64,8 @@ export default function Navbar() {
           </nav>
         </div>
         <div className='md:flex'>
-          <Link className='hidden md:block md:mr-10' to="/home">MY RESUME ↱ </Link>
-          <Link className='ml-auto md:ml-0' to="/home">WORK WITH ME ↱</Link>
+          <Link className='hidden md:block md:mr-10' to="Daniel_Flores_CV.pdf" target='_blank' rel='noopener noreferrer'>MY RESUME ↱ </Link>
+          <Link className='ml-auto md:ml-0' to="/contact">WORK WITH ME ↱</Link>
         </div>
       </div>
 
@@ -91,13 +91,13 @@ export default function Navbar() {
         {menuOpen && (
           <nav className='mobile_nav flex flex-col justify-between w-64 h-[400px] [top:-410px] sm:w-[25rem] sm:h-[25rem] sm:[top:-420px]'>
             <header className='flex justify-around w-1/2 text-xs sm:justify-start'>
-              <Link to="/home">LI ↱</Link>
-              <Link className='sm:ml-3' to="/home">GH ↱</Link>
+              <Link to="https://www.linkedin.com/in/danielfloca/">LI ↱</Link>
+              <Link className='sm:ml-3' to="https://github.com/Devnielote">GH ↱</Link>
             </header>
             <section className='flex flex-col items-center w-full'>
               <img src={dan} alt="Pixelated image of myself" className='w-2/6 rounded-full mb-5'/>
               <h1>Daniel Flores</h1>
-              <span className='text-xs text-[var(--dark-green)]'>Frontend Developer</span>
+              <span className='mt-1 text-xs text-[var(--dark-green)]'>Frontend Developer</span>
             </section>
             <section className='flex flex-col px-5 py-4 text-left border-y border-[var(--dark-green)] sm:mt-2'>
               <div className='flex justify-between items-center text-md'>
@@ -110,7 +110,7 @@ export default function Navbar() {
               </div>
             </section>
             <div className='flex mb-5 mx-auto text-xs sm:mt- sm:mt-3'>
-              <Link to="/home">WORK WITH ME</Link>
+              <Link to="/contact" onClick={() => setMenuOpen(false)}>WORK WITH ME</Link>
             </div>
           </nav>
         )}
