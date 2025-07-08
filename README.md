@@ -17,4 +17,4 @@ Mi portafolio web personal, lo contruí con React + Typescript + TailwindCSS + V
 ## Live Site
 [Visítalo](https://www.danielflores.dev/)
 
-**Cualquier sugerencia hazmela saber, te lo agradecería**
+**Cualquier sugerencia házmela saber, te lo agradecería**
