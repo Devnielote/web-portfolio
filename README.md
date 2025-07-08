@@ -1,5 +1,20 @@
-# Web developer portfolio
-- Home basado en timmadeit.com/home (esta web está pasada de lanza)
-- Agregar link de resumen que te dirija a un drive con los archivos
-- En sección de selected projects, agregar casos de estudio de los proyectos
-- dominio disponible: danielflores.dev en namecheap (200$)
+# Daniel Portfolio
+Mi portafolio web personal, lo contruí con React + Typescript + TailwindCSS + Vite
+
+---
+
+## Tech Stack
+- React
+- TypeScript
+- Vite
+- TailwindCSS
+- Framer Motion
+- FormSubmit
+- Lagrimas
+
+---
+
+## Live Site
+[Visítalo](https://www.danielflores.dev/)
+
+**Cualquier sugerencia hazmela saber, te lo agradecería**
