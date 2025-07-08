@@ -23,7 +23,7 @@ export default function Footer () {
           <span>/STALK ME</span>
           <Link className="flex w-auto mt-2" to="https://www.linkedin.com/in/danielfloca/">Linkedin</Link>
           <Link className="flex" to="https://github.com/Devnielote">Github</Link>
-          <Link className="flex" to="Daniel_Flores_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</Link>
+          <Link className="flex" to="Daniel_Flores_CV_EN.pdf" target="_blank" rel="noopener noreferrer">Resume</Link>
         </div>
       </div>
       <div className="hidden md:block md:mt-20 md:pl-10">

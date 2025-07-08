@@ -64,7 +64,7 @@ export default function Navbar() {
           </nav>
         </div>
         <div className='md:flex'>
-          <Link className='hidden md:block md:mr-10' to="Daniel_Flores_CV.pdf" target='_blank' rel='noopener noreferrer'>MY RESUME ↱ </Link>
+          <Link className='hidden md:block md:mr-10' to="Daniel_Flores_CV_EN.pdf" target='_blank' rel='noopener noreferrer'>MY RESUME ↱ </Link>
           <Link className='ml-auto md:ml-0' to="/contact">WORK WITH ME ↱</Link>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function Navbar() {
         >
         <div className='menu_overlay'></div>
         <button 
-          className={`menu_toggle md:hidden transition-all duration-300 ease-in-out
+          className={`menu_toggle appearance-none [&::-webkit-details-marker]:hidden md:hidden transition-all duration-300 ease-in-out
             ${menuOpen ? 'border-4 border-[var(--green-phosphor)]':'border-0'}
           `}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -89,7 +89,7 @@ export default function Navbar() {
         </button>
 
         {menuOpen && (
-          <nav className='mobile_nav flex flex-col justify-between w-64 h-[400px] [top:-410px] sm:w-[25rem] sm:h-[25rem] sm:[top:-420px]'>
+          <nav className='mobile_nav flex flex-col justify-evenly w-[calc(90vw)] h-[calc(60vh)] [top:-600px] sm:w-[25rem] sm:h-[25rem] sm:[top:-420px]'>
             <header className='flex justify-around w-1/2 text-xs sm:justify-start'>
               <Link to="https://www.linkedin.com/in/danielfloca/">LI ↱</Link>
               <Link className='sm:ml-3' to="https://github.com/Devnielote">GH ↱</Link>
@@ -99,17 +99,15 @@ export default function Navbar() {
               <h1>Daniel Flores</h1>
               <span className='mt-1 text-xs text-[var(--dark-green)]'>Frontend Developer</span>
             </section>
-            <section className='flex flex-col px-5 py-4 text-left border-y border-[var(--dark-green)] sm:mt-2'>
-              <div className='flex justify-between items-center text-md'>
-                <Link to="/projects" onClick={() => setMenuOpen(false)}>Selected projects</Link>
-                <span className='text-[var(--green-phosphor)]'>▷</span>
+            <section className='flex flex-col px-5 py-4 border-y border-[var(--dark-green)] sm:mt-2'>
+              <div className='flex items-center text-md'>
+                <Link to="/projects" onClick={() => setMenuOpen(false)} className='flex justify-between w-full'>Selected projects<span className='text-[var(--green-phosphor)]'>▷</span></Link>
               </div>
-              <div className='flex justify-between items-center mt-4 pt-2 border-t border-[var(--dark-green)] text-md'>
-                <Link className='' to="/about" onClick={() => setMenuOpen(false)}>About me</Link>
-                <span className='text-[var(--green-phosphor)]'>▷</span>
+              <div className='flex items-center mt-4 pt-2 border-t border-[var(--dark-green)] text-md'>
+                <Link className='flex justify-between w-full' to="/about" onClick={() => setMenuOpen(false)}>About me<span className='text-[var(--green-phosphor)]'>▷</span></Link>
               </div>
             </section>
-            <div className='flex mb-5 mx-auto text-xs sm:mt- sm:mt-3'>
+            <div className='flex mb-2 mx-auto text-xs'>
               <Link to="/contact" onClick={() => setMenuOpen(false)}>WORK WITH ME</Link>
             </div>
           </nav>
