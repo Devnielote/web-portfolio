@@ -1,4 +1,3 @@
-import React from "react";
 import photo from "../assets/dan-web.jpeg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -60,7 +59,7 @@ export default function About() {
         </div>
         <div className="relative flex flex-col mt-50 text-left lg:flex-row">
           <span className="absolute -top-8 text-base text-[var(--dark-green)]">/ SKILLSET</span>
-            <h2 className="w-[calc(50vw)] mt-5 text-2xl tracking-tighter  sm:text-4xl lg:text-6xl">My skills and interests</h2>
+            <h2 className="w-[calc(45vw)] mt-5 text-2xl tracking-tighter  sm:text-4xl lg:text-6xl">My skills and interests</h2>
           <div className="lg:w-[calc(50vw)] lg:leading-10">
             <p className="mt-8">My motivation comes from the constant challenge of adapting my skills, workflows, and problem-solving mindset to meet each client's evolving needs</p>
             <p>
@@ -82,8 +81,8 @@ export default function About() {
         <div className="relative mt-50 pb-30 text-left lg:flex lg:pb-60">
           <span className="absolute -top-10 text-base text-[var(--dark-green)]">/ PROFESSIONAL EXPERIENCE</span>
           <div>
-            <h1 className="w-[calc(50vw)] mt-5 mb-6 text-2xl tracking-tighter  sm:text-4xl lg:text-6xl">My work experience</h1>
-            <Link className="ml-5 p-1 border" to="/">VIEW LINKEDIN ↱</Link>
+            <h1 className="w-[calc(45vw)] mt-5 mb-6 text-2xl tracking-tighter  sm:text-4xl lg:text-6xl">My work experience</h1>
+            <Link className="ml-5 p-y-1 px-2 border" to="https://www.linkedin.com/in/danielflorescardona/">VIEW LINKEDIN ↱</Link>
           </div>
           <div className="mt-10 lg:w-[calc(50vw)]">
             <div className="flex justify-between items-center">
