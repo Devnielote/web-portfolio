@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div className="mt-12 lg:mt-20">
+    <div className="min-h-[100vh] mt-12 lg:mt-20">
       <div className="hero_container flex flex-col text-[2.5rem] leading-9 text-left font-bold p-3 sm:ml-10 md:text-[3rem] md:leading-10 lg:ml-64 lg:text-[3.8rem] lg:leading-14">
         <div className="relative flex">
           <motion.h2
