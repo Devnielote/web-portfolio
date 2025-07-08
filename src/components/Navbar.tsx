@@ -89,17 +89,17 @@ export default function Navbar() {
         </button>
 
         {menuOpen && (
-          <nav className='mobile_nav flex flex-col justify-evenly w-[calc(90vw)] h-[calc(60vh)] [top:-600px] sm:w-[25rem] sm:h-[25rem] sm:[top:-420px]'>
+          <nav className='mobile_nav flex flex-col justify-evenly w-80 sm:w-[30rem] [top:-480px] sm:[top:-490px]'>
             <header className='flex justify-around w-1/2 text-xs sm:justify-start'>
               <Link to="https://www.linkedin.com/in/danielfloca/">LI ↱</Link>
               <Link className='sm:ml-3' to="https://github.com/Devnielote">GH ↱</Link>
             </header>
-            <section className='flex flex-col items-center w-full'>
+            <section className='flex flex-col items-center w-full mt-10'>
               <img src={dan} alt="Pixelated image of myself" className='w-2/6 rounded-full mb-5'/>
               <h1>Daniel Flores</h1>
               <span className='mt-1 text-xs text-[var(--dark-green)]'>Frontend Developer</span>
             </section>
-            <section className='flex flex-col px-5 py-4 border-y border-[var(--dark-green)] sm:mt-2'>
+            <section className='flex flex-col px-5 py-4 mt-10 border-y border-[var(--dark-green)] sm:mt-2'>
               <div className='flex items-center text-md'>
                 <Link to="/projects" onClick={() => setMenuOpen(false)} className='flex justify-between w-full'>Selected projects<span className='text-[var(--green-phosphor)]'>▷</span></Link>
               </div>
@@ -107,7 +107,7 @@ export default function Navbar() {
                 <Link className='flex justify-between w-full' to="/about" onClick={() => setMenuOpen(false)}>About me<span className='text-[var(--green-phosphor)]'>▷</span></Link>
               </div>
             </section>
-            <div className='flex mb-2 mx-auto text-xs'>
+            <div className='flex mb-2 mx-auto mt-5 pb-5 text-xs'>
               <Link to="/contact" onClick={() => setMenuOpen(false)}>WORK WITH ME</Link>
             </div>
           </nav>
