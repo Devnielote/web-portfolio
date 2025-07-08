@@ -1,4 +1,4 @@
-# Daniel Portfolio
+# Daniel's Portfolio
 Mi portafolio web personal, lo contruí con React + Typescript + TailwindCSS + Vite
 
 ---
