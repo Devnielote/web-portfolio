@@ -60,25 +60,24 @@ export default function Navbar() {
           </Link>
           <nav className='hidden md:flex justify-start items-center ml-7 lg:ml-32'>
             <Link to="/projects">SELECTED PROJECTS</Link>
-            <Link className='ml-10' to="/about">ABOUT ME</Link> 
+            <Link className='ml-10' to="/about">ABOUT ME</Link>
           </nav>
         </div>
         <div className='md:flex'>
-          <Link className='hidden md:block md:mr-10' to="Daniel_Flores_CV_EN.pdf" target='_blank' rel='noopener noreferrer'>MY RESUME ↱ </Link>
           <Link className='ml-auto md:ml-0' to="/contact">WORK WITH ME ↱</Link>
         </div>
       </div>
 
       <div className='fixed left-1/2 translate-x-[-50%] bottom-5 z-50 md:hidden
-            transition-all 
-            duration-500 
+            transition-all
+            duration-500
             ease-out
-            opacity-0 
-            translate-y-2 
+            opacity-0
+            translate-y-2
             animate-fade-in-up'
         >
         <div className='menu_overlay'></div>
-        <button 
+        <button
           className={`menu_toggle appearance-none [&::-webkit-details-marker]:hidden md:hidden transition-all duration-300 ease-in-out
             ${menuOpen ? 'border-4 border-[var(--green-phosphor)]':'border-0'}
           `}
