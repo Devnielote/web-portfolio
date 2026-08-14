@@ -2,14 +2,16 @@ import { motion } from "framer-motion";
 import type { CSSProperties } from "react";
 
 const mainMessage: string =
-  "Hello there, I'm Daniel.";
+  "Hi, I'm Daniel.";
 const secondaryMessage: string =
-  "A full-stack developer who enjoys building things.";
+  "A developer who enjoys building things.";
 const heroIcons: string[] = ["↓"];
 const terminalParagraphStyle: boolean = true;
 const terminalStyles: CSSProperties = {
   color: terminalParagraphStyle ? "var(--dark-green)" : "var(--white)",
 };
+
+//TODO: Hello there, I'm Daniel. A developer (signo de + cambia la palabra developer por otros titulos cada vez mas bizarros pero que siempre combinan con enjoys building things)
 
 export default function HeroComponent() {
   return (
