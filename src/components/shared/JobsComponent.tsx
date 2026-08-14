@@ -1,8 +1,16 @@
 interface Job {
   title: string;
   company: string;
-  startDate: Date | string;
-  endDate: Date | string;
+  stack?: technology[];
+  startDate: Date;
+  endDate: Date | null;
+}
+
+interface technology {
+  name: string;
+  icon: string;
+  //Api de github para obtener repos con dicha tecnología y obtener un stat de exp dinámico
+  exp: number;
 }
 
 const jobList: Job[] = [
@@ -10,64 +18,39 @@ const jobList: Job[] = [
     title: "Full-stack developer",
     company: "Citro Telecom",
     startDate: new Date("2025-09-01"),
-    endDate: "Present",
+    endDate: null,
   },
   {
     title: "Front-end developer",
     company: "Freelance",
     startDate: new Date("2022-01-01"),
-    endDate: "Present",
+    endDate: null,
   },
   {
     title: "Front-end developer",
     company: "Outline Creative Community",
     startDate: new Date("2021-01-01"),
-    endDate: "Present",
+    endDate: null,
   },
-
-]
-
+];
 
 export default function JobsComponent() {
   return (
-    <div className="mt-10 lg:w-[calc(50vw)]">
-      {
-
-      }
-      <div className="flex justify-between items-center">
-        <h1>
-          Frontend developer -{" "}
-          <span className="text-[var(--green-phosphor)]">
-            Freelance Projects
+    <div className="mt-10 flex flex-col lg:w-[calc(50vw)]">
+      {jobList.map((job) => (
+        <div className="flex  flex-col items-start text-sm not-first:mt-4 md:text-lg md:flex-row md:justify-between">
+          <h1>
+            {job.title}{" "}
+            <span className="text-[var(--green-phosphor)] text-ellipsis">
+              {job.company}
+            </span>
+          </h1>
+          <span className="text-[var(--dark-green)] text-sm">
+            {job.startDate.getFullYear()} -{" "}
+            {job.endDate ? job.endDate.getFullYear() : "PRESENT"}{" "}
           </span>
-        </h1>
-        <span className="text-[var(--dark-green)]">2022 - NOW</span>
-      </div>
-      <div className="mt-10 flex justify-between items-center">
-        <h1>
-          Frontend Developer -{" "}
-          <span className="text-[var(--green-phosphor)]">
-            Livewick / Outline CC
-          </span>
-        </h1>
-        <span className="text-[var(--dark-green)]">2021 - Now (Collab)</span>
-      </div>
-      <div className="mt-10 flex justify-between items-center">
-        <h1>
-          Administrative Support -{" "}
-          <span className="text-[var(--green-phosphor)]">DFC Aceros</span>
-        </h1>
-        <span className="text-[var(--dark-green)]">2018 - Now</span>
-      </div>
-      <div className="mt-10 flex justify-between items-center">
-        <h1>
-          Veterinarian -{" "}
-          <span className="text-[var(--green-phosphor)]">
-            Genesis Hospital Veterinario
-          </span>
-        </h1>
-        <span className="text-[var(--dark-green)]">2016 - 2018</span>
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

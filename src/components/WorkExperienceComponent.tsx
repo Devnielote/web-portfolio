@@ -7,8 +7,8 @@ export default function WorkExperienceComponent() {
       <span className="absolute -top-10 text-base text-[var(--dark-green)]">
         / PROFESSIONAL EXPERIENCE
       </span>
-      <div>
-        <h1 className="w-[calc(45vw)] mt-5 mb-6 text-2xl tracking-tighter  sm:text-4xl lg:text-6xl">
+      <div className="mr-3">
+        <h1 className="w-[calc(40vw)] mt-5 mb-6 text-2xl tracking-tighter  sm:text-4xl lg:text-6xl">
           My work experience
         </h1>
         <RetroButton />

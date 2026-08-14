@@ -1,5 +1,6 @@
 import photo from "../assets/dan-web.jpeg";
 
+//TODO: Cambiar foto personal por imagenes de proyectos
 export default function AboutMeComponent() {
   return (
     <div className="lg:flex lg:justify-between lg:items-center">
