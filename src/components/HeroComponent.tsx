@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import type { CSSProperties } from "react";
 
 const mainMessage: string =
-  "Hello, this is the main message in the hero component.";
+  "Hello, I am Daniel.";
 const secondaryMessage: string =
-  "This is the secondary message in the hero component.";
+  "A frontend developer with passion for crafting responsive interfaces.";
 const heroIcons: string[] = ["↓"];
 const terminalParagraphStyle: boolean = true;
 const terminalStyles: CSSProperties = {

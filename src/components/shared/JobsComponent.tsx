@@ -28,7 +28,7 @@ const jobList: Job[] = [
   },
   {
     title: "Front-end developer",
-    company: "Outline Creative Community",
+    company: "Outline CC",
     startDate: new Date("2021-01-01"),
     endDate: null,
   },
@@ -36,9 +36,9 @@ const jobList: Job[] = [
 
 export default function JobsComponent() {
   return (
-    <div className="mt-10 flex flex-col lg:w-[calc(50vw)]">
+    <div className="mt-10 flex flex-col items-rigth lg:w-[calc(50vw)]">
       {jobList.map((job) => (
-        <div className="flex  flex-col items-start text-sm not-first:mt-4 md:text-lg md:flex-row md:justify-between">
+        <div className="flex flex-col items-start not-first:mt-4 md:text-lg md:flex-row md:justify-between">
           <h1>
             {job.title}{" "}
             <span className="text-[var(--green-phosphor)] text-ellipsis">

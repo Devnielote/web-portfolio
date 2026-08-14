@@ -11,7 +11,7 @@ const interestsList = [
 
 export default function IntererstsComponent() {
   return (
-    <ul className="mt-10  px-3 text-xl list-square list-inside sm:pl-10">
+    <ul className="mt-10 px-3 md:text-lg list-square list-inside sm:pl-10">
       {interestsList.map((interest) => (
         <li className="custom-marker">{interest}</li>
       ))}
